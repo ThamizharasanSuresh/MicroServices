@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Config-server" />
         <module name="API-Gateway" />
-        <module name="Project-service" />
         <module name="Employee-service" />
+        <module name="Project-service" />
       </profile>
       <profile name="Annotation profile for Service-registry" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -28,6 +29,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="API-Gateway" options="-parameters" />
+      <module name="Config-server" options="-parameters" />
       <module name="Employee-service" options="-parameters" />
       <module name="Project-service" options="-parameters" />
       <module name="Service-registry" options="-parameters" />

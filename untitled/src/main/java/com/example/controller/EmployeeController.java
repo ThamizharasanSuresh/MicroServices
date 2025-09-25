@@ -39,7 +39,6 @@ public class EmployeeController {
     public ResponseEntity<EmployeeDTO> getEmp(@PathVariable Long id){
         Optional<Employee> employee=employeeService.getEmployee(id);
         Optional<Project> project=projectInterface.getProjectbyID(employee.get().getAssingedProject()).getBody();
-
         EmployeeDTO employeeDTO = new EmployeeDTO();
 
         if(project.isEmpty()){
